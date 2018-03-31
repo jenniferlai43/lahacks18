@@ -1,0 +1,19 @@
+{
+  "name": "aih",
+  "version": "1.0.0",
+  "description": "",
+  "main": "LAHacks_2018_Andrew.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenniferlai43/lahacks18.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenniferlai43/lahacks18/issues"
+  },
+  "homepage": "https://github.com/jenniferlai43/lahacks18#readme"
+}
