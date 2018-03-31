@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jenniferlai43/lahacks18/issues"
   },
-  "homepage": "https://github.com/jenniferlai43/lahacks18#readme"
+  "homepage": "https://github.com/jenniferlai43/lahacks18#readme",
+  "dependencies": {
+    "twilio": "^3.14.0"
+  }
 }

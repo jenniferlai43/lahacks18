@@ -4,6 +4,11 @@
 <head>
 	<title>AIH | Emergency Contact</title>
 	<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
+	<style>
+    	.map {height: 100%;}
+   	 	html, body {height: 100%; margin: 0; padding: 0;}
+  	</style>
+
 </head>
 <body>
 	<div class = "banner">
@@ -17,6 +22,13 @@
 			<li class ="active"><a href='emergency.htm'>EMERGENCY CONTACT</a></li>
 		</ul>
 	</div>
+	<div class="map"></div>
+
+  <script src="app.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBmJXeMRfXFFJ6au5N0C6X7_DeDImjF_4&callback=initMap">
+  </script>
+
 </body>
 
 </html>
