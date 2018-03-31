@@ -4,6 +4,7 @@
 <head>
 	<title>AIH | BAC Calculator</title>
 	<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
+	
 </head>
 <body>
 	<div class = "banner">
@@ -19,24 +20,39 @@
 	</div>
 	<h1>Calculate your BAC:</h1>
 	<div class = "bac_form">
-		<form action="/action_page.ph">
-			Gender: <br>
-			<input type="radio" name="gender" value="male" checked> Male<br>
-			<input type="radio" name="gender" value="female"> Female <br>
-			<input type="image" src="images/submit_reg.jpg" alt="Submit" width="40" height="40"> <br>
-			Age: <br> <input type ="number" name="age" min="0">
-			<input type="image" src="images/submit_reg.jpg" alt="Submit" width="40" height="40"> <br>
-			Weight (in pounds): <br> <input type="number" name="weight" min="0" max="200">
-			<input type="image" src="images/submit_reg.jpg" alt="Submit" width="40" height="40"> <br>
-			Shots Consumed: <br> <input type="number" name="shot_quantity" min="0">
-			<input type="image" src="images/submit_reg.jpg" alt="Submit" width="40" height="40"> <br>
-			Time Elapsed since Drinking Started (in hours): <br> <input type="number" name="time_elapsed" min="0">
-			<input type="image" src="images/submit_reg.jpg" alt="Submit" width="40" height="40"> <br>
-		</form>
+			<div id = "gender_sec_container">
+				Gender: <br>
+				<input id="gender_male_sec" type="radio" name="gender" value="male" checked> Male<br>
+				<input id="gender_female_sec"type="radio" name="gender" value="female"> Female <br>
+				<input id = "next_1" type="image" src="images/submit_reg.jpg" value="Submit" width="40" height="40"> 
+			</div>
+			<br>
+			<div id = "weight_sec_container">
+				Weight (in pounds): <br> <input id ="weight_sec" type="number" name="weight" min="0" max="200">
+				<input id = "next_2" type="image" src="images/submit_reg.jpg" value="Submit" width="40" height="40">
+			</div>
+			<br>
+			<div id = "shot_quantity_sec_container">
+				Shots Consumed: <br> <input id="shot_quantity_sec" type="number" name="shot_quantity" min="0">
+				<input id = "next_3" type="image" src="images/submit_reg.jpg" value="Submit" width="40" height="40">
+			</div>
+			<br>
+			<div id = "time_elapsed_sec_container">
+				Time Elapsed since Drinking Started (in hours): <br> <input id="time_elapsed_sec" type="number" name="time_elapsed" min="0">
+			</div>
+			<div id = "submit_button_container">
+				<input id ="submit_button" type="submit" value="Submit">
+			</div>
+			<br>
 	</div>
 	<div class = "bac_print">
 		<h1>BAC Level:</h1>
+		<p id = "bac_value">%</p><br>
+		<p id = "bac_message"></p><br>
+		<p>Stay safe!</p><br>
+		<input id = "recalculate_button" type="button" value = "Recalculate">
 	</div>
+<script src="calculator.js"></script>
 </body>
 
 </html>
