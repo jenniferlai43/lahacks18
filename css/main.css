@@ -59,8 +59,54 @@ body
 	position: relative;
 }
 
-h1
+.main
+{
+	color: white;
+}
+
+.main h1
+{
+	font-size: 50px;
+	text-align: center;
+}
+
+.main h2
 {
 	text-align: center;
-	color: #271d28;
+	font-style: italic;
 }
+
+.main .cite
+{
+	font-size: 15px;
+}
+
+.main .cite a 
+{
+	color: white;
+	text-decoration: none;
+}
+
+.main .cite a:hover
+{
+	color: #271d28;
+	transition: color .5s;
+}
+
+.main_section
+{
+	padding: 20px;
+}
+
+.main .bac_form
+{
+	text-align: center;
+}
+
+/*
+.main input
+{
+	display:inline-block;
+	text-align: center;
+}
+*/
