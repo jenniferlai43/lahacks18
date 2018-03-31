@@ -4,7 +4,7 @@
 <head>
 	<title>AIH | BAC Calculator</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 	<div class = "banner">
@@ -21,40 +21,52 @@
 	<div class = "main">
 		<h1>Calculate your BAC:</h1>
 		<div class = "bac_form">
-				<div id = "gender_sec_container">
-					<h2>Gender:</h2> <br>
-					<div id = "gender_boxes">
-						<input id="gender_male_sec" type="radio" name="gender" value="male" checked> Male<br>
-						<input id="gender_female_sec"type="radio" name="gender" value="female"> Female
+				<div class="form_box">
+					<div id = "gender_sec_container">
+						<h2>Gender:</h2>
+						<div id = "gender_boxes">
+							<input id="gender_male_sec" class="w3-radio" type="radio" name="gender" value="male" checked> Male<br>
+							<input id="gender_female_sec" class="w3-radio" type="radio" name="gender" value="female"> Female
+						</div>
 					</div>
-					<input id = "next_1" type="image" src="images/submit_reg.png" value="Submit" width="40" height="40"> 
+					<div class="arrow">
+						<input id = "next_1" type="image" src="images/submit_reg.png" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" value="Submit" width="40" height="40"> 
+					</div>
 				</div>
-				<br>
-				<div id = "weight_sec_container">
-					<h2>Weight (in pounds):</h2> <br> <input id ="weight_sec" type="number" name="weight" min="0" max="200">
-					<input id = "next_2" type="image" src="images/submit_reg.png" value="Submit" width="40" height="40">
+				
+				<div class="form_box">
+					<div id = "weight_sec_container">
+						<h2>Weight (in pounds):</h2> <input id ="weight_sec" class="w3-input w3-border w3-round-xxlarge" type="number" name="weight" min="0" max="200">
+					</div>
+					<div class = "arrow">
+						<input id = "next_2" type="image" src="images/submit_reg.png" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" value="Submit" width="40" height="40">
+					</div>
 				</div>
-				<br>
-				<div id = "shot_quantity_sec_container">
-					<h2>Shots Consumed:</h2> <br> <input id="shot_quantity_sec" type="number" name="shot_quantity" min="0">
-					<input id = "next_3" type="image" src="images/submit_reg.png" value="Submit" width="40" height="40">
+				<div class = "form_box">
+					<div id = "shot_quantity_sec_container">
+						<h2>Shots Consumed:</h2> <input id="shot_quantity_sec" class="w3-input w3-border w3-round-xxlarge" type="number" name="shot_quantity" min="0">
+						
+					</div>
+					<div class = "arrow">
+						<input id = "next_3" type="image" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" src="images/submit_reg.png" value="Submit" width="40" height="40">
+					</div>
 				</div>
-				<br>
-				<div id = "time_elapsed_sec_container">
-					<h2>Time Elapsed since Drinking Started (in hours): </h2><br> <input id="time_elapsed_sec" type="number" name="time_elapsed" min="0">
+				<div class = "form_box">
+					<div id = "time_elapsed_sec_container">
+						<h2>Time Elapsed since Drinking Started (in hours): </h2> <input id="time_elapsed_sec" class="w3-input w3-border w3-round-xxlarge" type="number" name="time_elapsed" min="0">
+					</div>
 				</div>
 				<div id = "submit_button_container">
-					<input id ="submit_button" type="submit" value="Submit">
+					<input id ="submit_button" class="w3-round-xxlarge" type="submit" value="Submit">
 				</div>
-				<br>
 		</div>
-	</div>
-	<div class = "bac_print">
-		<h1>BAC Level:</h1>
-		<p id = "bac_value">%</p><br>
-		<p id = "bac_message"></p><br>
-		<p>Stay safe!</p><br>
-		<input id = "recalculate_button" type="button" value = "Recalculate">
+		<div id = "bac_print">
+			<h2>BAC Level:</h2>
+			<p id = "bac_value">0%</p>
+			<p id = "bac_message"></p>
+			<p>Stay safe!</p>
+			<input id = "recalculate_button" class="w3-input w3-border w3-round-xxlarge" type="button" value = "Recalculate">
+		</div>
 	</div>
 <script src="calculator.js"></script>
 </body>

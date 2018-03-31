@@ -62,29 +62,41 @@ body
 .main
 {
 	color: white;
+	font-family: 'Asap Condensed';
 }
 
 .main h1
 {
+	font-family: 'Asap Condensed';
 	font-size: 50px;
 	text-align: center;
 }
 
+
+#call
+{
+	font-size: 30px;
+	font-style: normal;
+}
+
 .main h2
 {
+	font-family: 'Asap Condensed';
 	text-align: center;
 	font-style: italic;
 }
 
-.main .cite
+#sourc
 {
 	font-size: 15px;
 }
+
 
 .main .cite a 
 {
 	color: white;
 	text-decoration: none;
+	text-align: center;
 }
 
 .main .cite a:hover
@@ -95,7 +107,7 @@ body
 
 .main_section
 {
-	padding: 20px;
+	padding: 10px;
 }
 
 .main .bac_form
@@ -103,10 +115,94 @@ body
 	text-align: center;
 }
 
-/*
-.main input
+.main .bac_form #gender_sec_container
 {
-	display:inline-block;
-	text-align: center;
+	display: block;
+	font-size: 25px;
 }
-*/
+
+.main .bac_form #weight_sec_container
+{
+	display: none;
+}
+
+.main .bac_form #shot_quantity_sec_container
+{
+	display: none;
+}
+
+.main .bac_form #time_elapsed_sec_container
+{
+	display: none;
+}
+
+.main .bac_form #submit_button_container
+{
+	display: none;
+}
+
+.main .bac_form #recalculate_button
+{
+	margin-bottom: 10px;
+}
+
+.main #bac_print
+{
+	font-size: 20px;
+	text-align: center;
+	display: none;
+}
+
+.main #bac_print #bac_value
+{
+	font-size: 40px;
+}
+
+.main .bac_form .form_box
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main .bac_form .form_box .arrow
+{
+	padding-left: 5rem;
+}
+
+.main input[type=image]:hover
+{
+	content: url("../images/submit_hover.png");
+	width: 40px;
+	height: 40px;
+}
+
+.main .arrow #next_2
+{
+	display: none;
+}
+
+.main .arrow #next_3
+{
+	display: none;
+}
+
+.main input[type=radio]
+{
+	/*width: 100%;*/
+    font-size: 40px;
+}
+
+.main input[type=number]
+{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.main input:focus
+{
+	outline: 0px;
+}
