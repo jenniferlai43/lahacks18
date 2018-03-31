@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class = "banner">
-		<img class = "banner_img" src="banner.jpg">
+		<img class = "banner_img" src="images/banner.jpg">
 	</div>
 	<div class = "nav">
 		<ul>
@@ -16,6 +16,26 @@
 			<li><a href='overdose.htm'>OVERDOSE SYMPTOMS</a></li>
 			<li><a href='emergency.htm'>EMERGENCY CONTACT</a></li>
 		</ul>
+	</div>
+	<h1>Calculate your BAC:</h1>
+	<div class = "bac_form">
+		<form action="/action_page.ph">
+			Gender: <br>
+			<input type="radio" name="gender" value="male" checked> Male<br>
+			<input type="radio" name="gender" value="female"> Female <br>
+			<input type="image" src="images/submit_reg.jpg" alt="Submit" width="40" height="40"> <br>
+			Age: <br> <input type ="number" name="age" min="0">
+			<input type="image" src="images/submit_reg.jpg" alt="Submit" width="40" height="40"> <br>
+			Weight (in pounds): <br> <input type="number" name="weight" min="0" max="200">
+			<input type="image" src="images/submit_reg.jpg" alt="Submit" width="40" height="40"> <br>
+			Shots Consumed: <br> <input type="number" name="shot_quantity" min="0">
+			<input type="image" src="images/submit_reg.jpg" alt="Submit" width="40" height="40"> <br>
+			Time Elapsed since Drinking Started (in hours): <br> <input type="number" name="time_elapsed" min="0">
+			<input type="image" src="images/submit_reg.jpg" alt="Submit" width="40" height="40"> <br>
+		</form>
+	</div>
+	<div class = "bac_print">
+		<h1>BAC Level:</h1>
 	</div>
 </body>
 
