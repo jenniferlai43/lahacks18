@@ -19,7 +19,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
 	var accountSid = 'AC0e2f38c93c2c31de8d70122dea8b6e38';
 	var authToken = '270ca4e74f2fadf4d7540909429af20a';
 
