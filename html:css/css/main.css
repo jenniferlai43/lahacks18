@@ -4,7 +4,7 @@ body
 {
 	font-family: 'Asap Condensed';
 	font-size: 22px;
-	background-color: #48324a;
+	background-color: #9b594a;
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
@@ -16,14 +16,14 @@ body
 	font-size: 22px;
 	text-align: justify;
 	width: 100%;
-	background-color: #48324a;
-	border-bottom: 3px solid white;
+	background-color: #9b594a;
+	border-bottom: 3px solid #202743;
 }
 
 .nav ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: #48324a;
+    background-color: #9b594a;
     display: flex;
   	justify-content: space-around;
     margin: 0px;
@@ -38,7 +38,7 @@ body
 
 .nav li a{
     display: inline-block;
-    color: #ffffff;
+    color: #202743;
     text-align: center;
     padding:14px 0px;
     text-decoration: none;
@@ -46,15 +46,15 @@ body
 }
 
 .nav li a:hover{
-    background: #ffffff;
-    color: #48324a;
+    background: #202743;
+    color: #9b594a;
     transition: background 1s;
 }
 
 .nav li.active a
 {
-	background-color: #ffffff;
-	color: #48324a;
+	background-color: #202743;
+	color: #9b594a;
 }
 
 .banner .banner_img
@@ -74,7 +74,7 @@ body
 
 #norm 
 {
-	color: white;
+	color: #202743;
 }
 
 .main h1
@@ -97,9 +97,11 @@ body
 {
 	font-family: 'Asap Condensed';
 	font-size: 70px;
+	font-style: italic;
 	text-align: center;
 	margin: 50px;
 	width: auto;
+	color: white;
 }
 
 
@@ -117,21 +119,22 @@ body
 
 .main .cite a 
 {
-	color: white;
+	color: #602b1f;
 	text-decoration: none;
 	text-align: center;
 }
 
 .main .cite a:hover
 {
-	color: #271d28;
+	color: #202743;
 	transition: color .5s;
 }
 
 .main_section
 {
-	padding: 10px;
+	padding: 10px 0px;
 	position: relative;
+	width: 100%;
 }
 
 .first_text
@@ -276,13 +279,14 @@ body
 
 .purpbg
 {
-	background-color: #48324a;
+	background-color: #9b594a;
+	color: #202743;
 }
 
 .whitebg
 {
-	background-color: #ffffff;
-	color: #48324a;
+	background-color:  #202743;
+	color: #9b594a;
 }
 
 .main .bac_form
@@ -325,14 +329,25 @@ body
 
 .main #bac_print
 {
-	font-size: 20px;
+	font-size: 30px;
 	text-align: center;
 	display: none;
 }
 
 .main #bac_print #bac_value
 {
-	font-size: 40px;
+	font-size: 60px;
+	color:white;
+}
+
+.main h2.bac_lvl
+{
+	font-style: normal;
+}
+
+#bac_message
+{
+	font-size: 30px;
 }
 
 .main .bac_form .form_box .arrow
@@ -398,7 +413,8 @@ body
 	font-family: 'Asap Condensed';
 	font-size: 50px;
 	text-align: center;	
-	color: white;
+	color: #202743;
+	font-style: italic;
 }
 
 .right 
@@ -409,9 +425,9 @@ body
 
 .right .button_call {
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #202743;
   border: none;
-  color: #FFFFFF;
+  color: #9b594a;
   text-align: center;
   font-size: 28px;
   font-family: 'Asap Condensed';
@@ -452,4 +468,24 @@ body
 .map 
 {
 	color:black;
+}
+
+.nice_button
+{
+	background: #202743;
+	font-family: 'Asap Condensed';
+	font-size: 20px;
+	color: #9b594a;
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 15px 5px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.nice_button:hover 
+{
+	color: #202743;
+	background: #9b594a;
 }
