@@ -110,7 +110,7 @@ recalculate_button.addEventListener("click", function()
 
 function printmessage(bac){
 	console.log("Bac", bac);
-	document.getElementById("bac_value").innerHTML = (bac*100).toPrecision(5) + "%";
+	document.getElementById("bac_value").innerHTML = bac.toPrecision(5) + "%";
 	if(bac < .08){
 		console.log("Mild impairement, but you're safe to drive!");
 		document.getElementById("bac_message").innerHTML = "Mild impairement, but you're safe to drive!";
