@@ -7,7 +7,8 @@ body
 	background-color: #9b594a;
 	margin: 0px;
 	padding: 0px;
-	height: 100%;
+	height: auto;
+	width: auto;
 }
 
 .nav
@@ -15,7 +16,7 @@ body
 	font-family: 'Asap Condensed';
 	font-size: 22px;
 	text-align: justify;
-	width: 100%;
+	width: auto;
 	background-color: #9b594a;
 	border-bottom: 3px solid #202743;
 }
@@ -33,7 +34,7 @@ body
 
 .nav li {
     float: left;
-    width: 100%;
+    width: 100%
 }
 
 .nav li a{
@@ -42,7 +43,7 @@ body
     text-align: center;
     padding:14px 0px;
     text-decoration: none;
-    width: 100%;
+    width: inherit;
 }
 
 .nav li a:hover{

@@ -4,10 +4,11 @@
 <head>
 	<title>AIH | BAC Calculator</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 </head>
 <body>
 	<div class = "banner">
-		<img class = "banner_img" src="images/banner.jpg">
+		<a href ="index.htm"><img class = "banner_img" src="images/banner.jpg"></a>
 	</div>
 	<div class = "nav">
 		<ul>
@@ -18,53 +19,53 @@
 		</ul>
 	</div>
 	<div class = "main" id = "norm">
-		<h4>Calculate your BAC:</h4>
-		<div class = "bac_form">
-			<div id = "first_box">
-				<div class="form_box">
-					<div id = "gender_sec_container">
-						<h2>Gender:</h2>
-						<div id = "gender_boxes">
-							<input id="gender_male_sec"type="radio" name="gender" value="male" checked> Male<br>
-							<input id="gender_female_sec"type="radio" name="gender" value="female"> Female
+		<div class = "main_section">
+			<h4>Calculate your BAC:</h4>
+			<div class = "bac_form">
+				<div id = "first_box">
+					<div class="form_box">
+						<div id = "gender_sec_container">
+							<h2>Gender:</h2>
+							<div id = "gender_boxes">
+								<input id="gender_male_sec"type="radio" name="gender" value="male" checked> Male<br>
+								<input id="gender_female_sec"type="radio" name="gender" value="female"> Female
+							</div>
+						</div>
+						<div class="arrow">
+							<input id = "next_1" type="image" src="images/submit_reg.png" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" value="Submit" width="60" height="60"> 
 						</div>
 					</div>
-					<div class="arrow">
-						<input id = "next_1" type="image" src="images/submit_reg.png" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" value="Submit" width="60" height="60"> 
+				</div>
+				<div id = "second_box">
+					<div class="form_box">
+						<div id = "weight_sec_container">
+							<h2>Weight (in pounds):</h2> <input id ="weight_sec" type="number" name="weight" min="0" max="200">
+						</div>
+						<div class = "arrow">
+							<input id = "next_2" type="image" src="images/submit_reg.png" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" value="Submit" width="60" height="60">
+						</div>
 					</div>
 				</div>
-			</div>
-			<div id = "second_box">
-				<div class="form_box">
-					<div id = "weight_sec_container">
-						<h2>Weight (in pounds):</h2> <input id ="weight_sec" type="number" name="weight" min="0" max="200">
-					</div>
-					<div class = "arrow">
-						<input id = "next_2" type="image" src="images/submit_reg.png" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" value="Submit" width="60" height="60">
-					</div>
-				</div>
-			</div>
-			<div id = "third_box">
-				<div class = "form_box">
-					<div id = "shot_quantity_sec_container">
-						<h2>Shots Consumed:</h2> <input id="shot_quantity_sec" type="number" name="shot_quantity" min="0">
-						
-					</div>
-					<div class = "arrow">
-						<input id = "next_3" type="image" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" src="images/submit_reg.png" value="Submit" width="60" height="60">
+				<div id = "third_box">
+					<div class = "form_box">
+						<div id = "shot_quantity_sec_container">
+							<h2>Shots Consumed:</h2> <input id="shot_quantity_sec" type="number" name="shot_quantity" min="0">
+							
+						</div>
+						<div class = "arrow">
+							<input id = "next_3" type="image" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" src="images/submit_reg.png" value="Submit" width="60" height="60">
+						</div>
 					</div>
 				</div>
-			</div>
-			<div id = "fourth_box">
-				<div class = "form_box">
-					<div id = "time_elapsed_sec_container">
-						<h2>Time Elapsed since Drinking Started (in hours): </h2> <input id="time_elapsed_sec" type="number" name="time_elapsed" min="0">
+				<div id = "fourth_box">
+					<div class = "form_box">
+						<div id = "time_elapsed_sec_container">
+							<h2>Time Elapsed since Drinking Started (in hours): </h2> <input id="time_elapsed_sec" type="number" name="time_elapsed" min="0">
+						</div>
 					</div>
-				</div>
-				<div id = "submit_button_container">
-					<input class = "nice_button" id ="submit_button" type="submit" value="Submit">
-					<!--
-					<button class = "button_call" id = "button_click" type="button"><span>Call 911</span></button>-->
+					<div id = "submit_button_container">
+						<input class = "nice_button" id ="submit_button" type="submit" value="Submit">
+					</div>
 				</div>
 			</div>
 		</div>
