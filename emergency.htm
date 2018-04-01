@@ -48,13 +48,21 @@
     	  <div id="map"></div>
       </div>
       <div class = "right">
-        <button class = "button_call" type="button"><span>Call 911</span></button>
+        <button class = "button_call" id = "button_click" type="button"><span>Call 911</span></button>
       </div>
     </div>
   </div>
 
   <script src="map.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBmJXeMRfXFFJ6au5N0C6X7_DeDImjF_4&callback=initMap"></script>
+  <script>
+    var button = document.getElementById("button_click");
+    button.addEventListener("click", function(){
+      alert("calling");
+    button.disabled = true;
+      fetch("http://localhost:3000", {method: "post"});
+    })
+  </script>
 </body>
 
 </html>
