@@ -1,3 +1,14 @@
+// The functions in this file are in server.js
+// this file is not needed
+
+// Theoretically, we want our message (twiml) to direct a call 
+// the police. We were missing a feature where the user inputs their 
+// address. 
+
+// The twilio should send a message asking for help to the location
+// the user inputs. The call is directed to my phone number because 
+// this is a prototype and should not actually call the police.
+
 var accountSid = 'AC0e2f38c93c2c31de8d70122dea8b6e38';
 var authToken = '270ca4e74f2fadf4d7540909429af20a';
 

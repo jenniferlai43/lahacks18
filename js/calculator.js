@@ -1,9 +1,5 @@
-// LAHacks_2018
-// 
-// Alcohol Information Helper
-//
-// Andrew Nguyen & Jeniffer
-// 
+// This file contains the user-interaction with the BAC Calculator
+// including buttons and inputting the user information
 
 var maleGender = document.querySelector("#gender_male_sec");
 
@@ -19,20 +15,8 @@ var next_1 = document.querySelector("#next_1");
 
 next_1.addEventListener("click", function()
 {
-	/**
-	var section1 = document.getElementById("gender_sec_container");
-	var section2 = document.getElementById("next_1");
-	section1.style.display = "none";
-	section2.style.display = "none";
-	**/
 	var section1 = document.getElementById("first_box");
 	section1.style.display = "none";
-	/**
-	var section3 = document.getElementById("weight_sec_container");
-	var section4 = document.getElementById("next_2");
-	section3.style.display= "inline-block";
-	section4.style.display = "inline-block";
-	**/
 	var section2 = document.getElementById("second_box");
 	section2.style.display = "inline-block";
 })
@@ -41,20 +25,8 @@ var next_2 = document.querySelector("#next_2");
 
 next_2.addEventListener("click", function()
 {
-	/**
-	var section1 = document.getElementById("weight_sec_container");
-	var section2 = document.getElementById("next_2");
-	section1.style.display = "none";
-	section2.style.display = "none";
-	**/
 	var section1 = document.getElementById("second_box");
 	section1.style.display = "none";
-	/**
-	var section3 = document.getElementById("shot_quantity_sec_container");
-	var section4 = document.getElementById("next_3");
-	section3.style.display = "inline-block";
-	section4.style.display = "inline-block";
-	**/
 	var section2 = document.getElementById("third_box");
 	section2.style.display = "inline-block";
 })
@@ -63,20 +35,8 @@ var next_3 = document.querySelector("#next_3");
 
 next_3.addEventListener("click", function()
 {
-	/**
-	var section1 = document.getElementById("shot_quantity_sec_container");
-	var section2 = document.getElementById("next_3");
-	section1.style.display = "none";
-	section2.style.display = "none";
-	**/
 	var section1 = document.getElementById("third_box");
 	section1.style.display = "none";
-	/**
-	var section3 = document.getElementById("time_elapsed_sec_container");
-	var section4 = document.getElementById("submit_button_container");
-	section3.style.display = "inline-block";
-	section4.style.display = "inline-block";
-	**/
 	var section2 = document.getElementById("fourth_box");
 	section2.style.display = "inline-block";
 })
@@ -140,30 +100,3 @@ function BloodAlcoholContent(weight, gender, shots, hours){
 
 	return bac;
 }
-
-/*
-var x = BloodAlcoholContent(160, 19, 'male', 5, 1);
-printmessage(x);
-console.log(x);
-*/
-
-/* Function that prompts user for input:
-
-function promptUser(){
-	var userweight = prompt("Please Enter your weight");
-	var usergender = prompt("Are you male or female?");
-	var usershots = prompt("How many drinks have you consumed?(oz). One shot is one oz.");
-	var hours = prompt("How many hours has it been?");
-
-	var bac = BloodAlcoholContent(userweight, usergender, usershots, hours);
-
-	return bac;
-}
-*/
-
-/* Testing functions: 
-var x = BloodAlcoholContent(160, 19, 'male', 5, 1);
-printmessage(x);
-console.log(x);
-*/ 
-

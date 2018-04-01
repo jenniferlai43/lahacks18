@@ -1,3 +1,15 @@
+// Utlizes twilio API and phone number
+// Used the tutorial for twilio on making outphone calls
+// Hosts the server for twilio phone calls
+
+// Theoretically, we want our message (twiml) to direct a call 
+// the police. We were missing a feature where the user inputs their 
+// address. 
+
+// The twilio should send a message asking for help to the location
+// the user inputs. The call is directed to my phone number because 
+// this is a prototype and should not actually call the police.
+
 const express = require('express')
 const app = express()
 
