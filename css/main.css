@@ -7,14 +7,22 @@ body
 	background-color: #48324a;
 	margin: 0px;
 	padding: 0px;
+	height: 100%;
 }
 
 .nav
 {
+	font-family: 'Asap Condensed';
+	font-size: 22px;
 	text-align: center;
 	width: 100%;
 	background-color: #48324a;
 	border-bottom: 3px solid white;
+}
+
+body .override
+{
+	font-size: 22 px;
 }
 
 .nav ul {
@@ -167,7 +175,7 @@ body
 
 .main .bac_form .form_box .arrow
 {
-	padding-left: 5rem;
+	padding-left: 3rem;
 }
 
 .main input[type=image]:hover
@@ -189,7 +197,6 @@ body
 
 .main input[type=radio]
 {
-	/*width: 100%;*/
     font-size: 40px;
 }
 
@@ -205,4 +212,75 @@ body
 .main input:focus
 {
 	outline: 0px;
+}
+
+
+.wrapper
+{
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+  	align-items:center;
+  	justify-content: center;
+}
+
+.left
+{
+	float: left;
+}
+
+.left h1
+{
+	font-family: 'Asap Condensed';
+	font-size: 50px;
+	text-align: center;	
+	color: white;
+}
+
+.right 
+{
+	height: 100%;
+	margin-left: 100px;
+}
+
+.right .button_call {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Asap Condensed';
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  outline: none;
+  
+}
+
+.button_call span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button_call span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button_call:hover span {
+  padding-right: 25px;
+}
+
+.button_call:hover span:after {
+  opacity: 1;
+  right: 0;
 }
