@@ -218,6 +218,62 @@ body
 	opacity: 0;
 }
 
+.fourth_text
+{
+	position: relative;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.fourth_img img
+{
+	position: absolute;
+	text-align: center;
+	top: 45px;
+	left: 50%;
+	margin-left: -100px;
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+.container_4:hover .fourth_text
+{
+	opacity: 1;
+}
+
+.container_4:hover img
+{
+	opacity: 0;
+}
+
+.fifth_text
+{
+	position: relative;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.fifth_img img
+{
+	position: absolute;
+	text-align: center;
+	top: 45px;
+	left: 50%;
+	margin-left: -100px;
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+.container_5:hover .fifth_text
+{
+	opacity: 1;
+}
+
+.container_5:hover img
+{
+	opacity: 0;
+}
+
 .purpbg
 {
 	background-color: #48324a;
