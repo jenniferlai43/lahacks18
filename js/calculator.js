@@ -129,8 +129,12 @@ function printmessage(bac){
 }
 
 function BloodAlcoholContent(weight, gender, shots, hours){
-
-	var genderconstant = (gender) ? .73 : .66;
+	var genderconstant;
+	if(gender == 'Male'){
+		genderconstant = .73;
+	} else{
+		genderconstant = .66;
+	}
 
 	var bac = (shots * 5.14 / weight * genderconstant) - .015 * hours;
 
