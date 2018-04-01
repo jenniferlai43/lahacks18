@@ -69,12 +69,17 @@ body
 
 .main
 {
-	color: white;
 	font-family: 'Asap Condensed';
+}
+
+#norm 
+{
+	color: white;
 }
 
 .main h1
 {
+	color: white;
 	font-family: 'Asap Condensed';
 	font-size: 50px;
 	text-align: center;
@@ -386,4 +391,9 @@ body
 .button_call:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.map 
+{
+	color:black;
 }
