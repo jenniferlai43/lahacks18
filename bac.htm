@@ -9,7 +9,7 @@
 	<div class = "banner">
 		<img class = "banner_img" src="images/banner.jpg">
 	</div>
-	<div class = "nav" class = "override">
+	<div class = "nav">
 		<ul>
 			<li><a href='index.htm'>HOME</a></li>
 			<li class="active"><a href='bac.htm'>BAC CALCULATOR</a></li>
@@ -18,8 +18,9 @@
 		</ul>
 	</div>
 	<div class = "main">
-		<h1>Calculate your BAC:</h1>
+		<h4>Calculate your BAC:</h4>
 		<div class = "bac_form">
+			<div id = "first_box">
 				<div class="form_box">
 					<div id = "gender_sec_container">
 						<h2>Gender:</h2>
@@ -29,27 +30,32 @@
 						</div>
 					</div>
 					<div class="arrow">
-						<input id = "next_1" type="image" src="images/submit_reg.png" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" value="Submit" width="40" height="40"> 
+						<input id = "next_1" type="image" src="images/submit_reg.png" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" value="Submit" width="60" height="60"> 
 					</div>
 				</div>
-				
+			</div>
+			<div id = "second_box">
 				<div class="form_box">
 					<div id = "weight_sec_container">
 						<h2>Weight (in pounds):</h2> <input id ="weight_sec" type="number" name="weight" min="0" max="200">
 					</div>
 					<div class = "arrow">
-						<input id = "next_2" type="image" src="images/submit_reg.png" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" value="Submit" width="40" height="40">
+						<input id = "next_2" type="image" src="images/submit_reg.png" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" value="Submit" width="60" height="60">
 					</div>
 				</div>
+			</div>
+			<div id = "third_box">
 				<div class = "form_box">
 					<div id = "shot_quantity_sec_container">
 						<h2>Shots Consumed:</h2> <input id="shot_quantity_sec" type="number" name="shot_quantity" min="0">
 						
 					</div>
 					<div class = "arrow">
-						<input id = "next_3" type="image" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" src="images/submit_reg.png" value="Submit" width="40" height="40">
+						<input id = "next_3" type="image" onmouseover="this.src='images/submit_hover.png'" onmouseout="this.src='images/submit_reg.png'" src="images/submit_reg.png" value="Submit" width="60" height="60">
 					</div>
 				</div>
+			</div>
+			<div id = "fourth_box">
 				<div class = "form_box">
 					<div id = "time_elapsed_sec_container">
 						<h2>Time Elapsed since Drinking Started (in hours): </h2> <input id="time_elapsed_sec" type="number" name="time_elapsed" min="0">
@@ -58,13 +64,16 @@
 				<div id = "submit_button_container">
 					<input id ="submit_button" type="submit" value="Submit">
 				</div>
+			</div>
 		</div>
 		<div id = "bac_print">
 			<h2>BAC Level:</h2>
 			<p id = "bac_value">0%</p>
 			<p id = "bac_message"></p>
 			<p>Stay safe!</p>
-			<input id = "recalculate_button" type="button" value = "Recalculate">
+			<div id = "recalc_button">
+				<input id = "recalculate_button" type="button" value = "Recalculate">
+			</div>
 		</div>
 	</div>
 <script src="calculator.js"></script>

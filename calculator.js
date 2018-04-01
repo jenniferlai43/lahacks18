@@ -19,56 +19,78 @@ var next_1 = document.querySelector("#next_1");
 
 next_1.addEventListener("click", function()
 {
+	/**
 	var section1 = document.getElementById("gender_sec_container");
 	var section2 = document.getElementById("next_1");
 	section1.style.display = "none";
 	section2.style.display = "none";
+	**/
+	var section1 = document.getElementById("first_box");
+	section1.style.display = "none";
+	/**
 	var section3 = document.getElementById("weight_sec_container");
 	var section4 = document.getElementById("next_2");
 	section3.style.display= "inline-block";
 	section4.style.display = "inline-block";
+	**/
+	var section2 = document.getElementById("second_box");
+	section2.style.display = "inline-block";
 })
 
 var next_2 = document.querySelector("#next_2");
 
 next_2.addEventListener("click", function()
 {
+	/**
 	var section1 = document.getElementById("weight_sec_container");
 	var section2 = document.getElementById("next_2");
 	section1.style.display = "none";
 	section2.style.display = "none";
+	**/
+	var section1 = document.getElementById("second_box");
+	section1.style.display = "none";
+	/**
 	var section3 = document.getElementById("shot_quantity_sec_container");
 	var section4 = document.getElementById("next_3");
-	section3.style.display = "block";
-	section4.style.display = "block";
+	section3.style.display = "inline-block";
+	section4.style.display = "inline-block";
+	**/
+	var section2 = document.getElementById("third_box");
+	section2.style.display = "inline-block";
 })
 
 var next_3 = document.querySelector("#next_3");
 
 next_3.addEventListener("click", function()
 {
+	/**
 	var section1 = document.getElementById("shot_quantity_sec_container");
 	var section2 = document.getElementById("next_3");
 	section1.style.display = "none";
 	section2.style.display = "none";
+	**/
+	var section1 = document.getElementById("third_box");
+	section1.style.display = "none";
+	/**
 	var section3 = document.getElementById("time_elapsed_sec_container");
 	var section4 = document.getElementById("submit_button_container");
-	section3.style.display = "block";
-	section4.style.display = "block";
+	section3.style.display = "inline-block";
+	section4.style.display = "inline-block";
+	**/
+	var section2 = document.getElementById("fourth_box");
+	section2.style.display = "inline-block";
 })
 
 var submit_button = document.querySelector("#submit_button");
 
 submit_button.addEventListener("click", function (){
-	var section1 = document.getElementById("time_elapsed_sec_container");
-	var section2 = document.getElementById("submit_button_container");
-	var section3 = document.getElementById("bac_print");
+	var section1 = document.getElementById("fourth_box");
+	var section2 = document.getElementById("bac_print");
 	section1.style.display = "none";
-	section2.style.display = "none";
 	var bac = BloodAlcoholContent(weight.value, maleGender.value, shotsConsumed.value, timeElapsed.value);
 	console.log(weight.value, maleGender.value, shotsConsumed.value, timeElapsed.value);
 	printmessage(bac);
-	section3.style.display = "block";
+	section2.style.display = "block";
 	console.log("Submit pressed.");
 })
 
@@ -82,8 +104,7 @@ recalculate_button.addEventListener("click", function()
 	section1.value = "";
 	section2.value = "";
 	section3.value = "";
-	document.getElementById("gender_sec_container").style.display = "block";
-	document.getElementById("next_1").style.display = "block";
+	document.getElementById("first_box").style.display = "block";
 	document.getElementById("bac_print").style.display = "none";
 })
 
